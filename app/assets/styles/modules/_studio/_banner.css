@@ -1,0 +1,11 @@
+.studio-banner {
+	background: url("../images/studio_banner.jpg") no-repeat;
+	background-size: cover;
+	height: 400px;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+

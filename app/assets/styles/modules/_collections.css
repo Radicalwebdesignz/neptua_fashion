@@ -1,0 +1,17 @@
+.collections {
+	background-color: $secBlack;
+	@mixin atMedium {
+		&--image2, &--image4 {
+		border-top: solid 8.68px transparent;
+	}
+
+	&--image2, &--image1 {
+		border-left: solid 8.68px transparent;
+	}
+
+	&--image3, &--image4 {
+		border-left: solid 8.68px transparent;
+	}
+	}
+	
+}

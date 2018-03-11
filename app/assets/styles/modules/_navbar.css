@@ -1,0 +1,20 @@
+.navbar {
+	h3 {
+		font-size: 1rem;
+		@mixin atMedium {
+			font-size: 1.75rem;
+		}
+	}
+
+	&--color .navbar-nav li {
+		background-color: $secBlack !important;
+		@mixin atLarge{
+			background-color: transparent !important;
+		}
+	}
+
+	&--nav-color {
+		background-color: $mainBlack;
+		transition: all 1s ease;
+	}
+}

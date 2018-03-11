@@ -1,0 +1,11 @@
+.team {
+	background-color: $secBlack;
+	.card{
+		border: none;
+		background-color: $secBlack;
+		color:#fff;
+		h5 {
+			font-weight: 800;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.slider {
+
+	&--body {
+		position: relative;
+	}
+	
+	&--text {
+		position: absolute;
+		top:50%;
+		left: 0%;
+		text-align: center;
+		width:100%;
+		transform: translateY(-50%);
+		color:#fff;
+		padding-top:100px;
+
+		@mixin atExtraSmall {
+			padding-top:50px;
+		}
+		@mixin atMedium {
+			padding-top:0px;
+		}
+	}
+	&--text h2 {
+		font-size: 30px;
+		@mixin atSmall {
+			font-size: 40px;
+		}
+		@mixin atMedium {
+			font-size: 100px;
+		}
+	}
+	&--text p {
+		font-size: 10px;
+		background-color: #3b575f;
+		display: inline-block;
+		padding: 0 10px;
+
+		@mixin atSmall {
+			font-size: 15px;
+		}
+	}
+
+}

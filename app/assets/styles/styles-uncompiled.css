@@ -1,0 +1,32 @@
+/*Import the _large-hero.css file to this file*/
+/*user _ at the beginning of the css file to denote that the file is a part file
+ - Import needs to be at the top of the file*/
+
+@import "bootstrap";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_slider";
+@import "modules/_welcome";
+@import "modules/_navbar";
+@import "modules/_studio";
+@import "modules/_signup";
+@import "modules/_team";
+@import "modules/_services";
+@import "modules/_collections";
+@import "modules/_trends";
+@import "modules/_news-testimonials";
+@import "modules/_contact";
+@import "modules/_footer";
+@import "modules/_studio/_banner";
+@import "modules/_studio/_approach";
+@import "modules/_studio/_quote";
+@import "modules/_studio/_values";
+@import "modules/_studio/_our-story";
+@import "modules/_studio/_clients";
+@import "modules/_talent/_talent";
+@import "modules/_general/_general";
+@import "modules/_exotic/_exotic";
+@import "modules/_services/_services";
+@import "modules/_services/_services";
+@import "modules/_news/_news";

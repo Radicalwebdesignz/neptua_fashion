@@ -1,0 +1,14 @@
+.news-banner {
+	background: url("../images/news.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+.news-posts {
+	margin-top: 400px;
+}

@@ -1,0 +1,28 @@
+.signup {
+	background: url("../images/signup.jpg") no-repeat;
+	position: relative;
+	background-size: cover;
+	height: 500px;
+	
+	.container {
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+	}
+
+	.col-md-8 {
+		padding: 50px 10px;
+		border: solid 5px #fff;
+
+		@media only screen and (max-width:576px) {
+			border: none;
+		}
+	}
+
+	.col-md-3 {
+		padding: 50px 10px;
+		background-color:rgba($mainBlue, 0.6);
+		border: solid 5px rgba($mainBlue, 0); 
+	}
+
+}

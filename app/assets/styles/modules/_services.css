@@ -1,0 +1,17 @@
+.services {
+	&--content-body {
+		position: relative;
+		background-color: $mainBlue;
+	}
+	&--content {
+		padding-top:3rem;
+		padding-bottom:3rem;
+
+		@mixin atMedium {
+			position: absolute;
+			top: 50%;
+			left:0%;
+			transform: translateY(-50%);
+		}
+	}
+}

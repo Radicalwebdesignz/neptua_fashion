@@ -1,0 +1,6 @@
+.quote {
+	background: url("../images/quote.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}

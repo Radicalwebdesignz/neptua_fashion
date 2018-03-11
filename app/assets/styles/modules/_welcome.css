@@ -1,0 +1,13 @@
+.welcome {
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color: $secBlack;
+	@mixin atSmall {
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+
+	& p {
+		line-height: 1.65;
+	}
+}

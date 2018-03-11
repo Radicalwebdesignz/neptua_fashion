@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+h1, h2, h4, h4, h5, h6 {
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 500;
+}
+
+body {
+	font-family: "roboto", sans-serif;
+}
+
+.icon-color {
+	color:$mainBlue;
+}
+
+.black-color {
+	color:$mainBlack;
+}
+
+.main-bg {
+	background-color: $mainBlack;
+}
+
+.sec-bg {
+	background-color: $secBlack;
+}
+
+.banner-centered-text {
+	position: relative;
+}
+
+.banner-section {
+	position: relative;
+	top:50%;
+	left: 0%;
+	transform: translateY(-50%);
+}
+
+
+
+
+
+

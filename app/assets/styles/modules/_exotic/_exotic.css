@@ -1,0 +1,110 @@
+.exotic-banner {
+	background: url("../images/exotic.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+
+	p {
+		background-color: rgba($mainBlue, 0.5);
+		display: inline-block;
+		padding: 0 15px;
+	}
+}
+
+.clothing {
+	margin-top: 400px;
+	background-color: $mainBlack;
+	color: #fff;
+
+	h5 {
+		letter-spacing: 4px;
+	}
+}
+
+.trends {
+	background: url("../images/trends1.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+
+	&-body {
+		position: relative;
+	}
+
+	&-content {
+		position: relative;
+		top:50%;
+		transform: translateY(30%);
+	}
+
+	.title-secondary {
+		letter-spacing: 4px;
+	}
+
+}
+
+.trends-sec {
+	background: url("../images/trends2.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+
+	&-body {
+		position: relative;
+	}
+
+	&-content {
+		position: relative;
+		top:50%;
+		transform: translateY(30%);
+	}
+
+	.title-secondary {
+		letter-spacing: 4px;
+	}
+
+}
+
+.designs--no-shadow {
+	.col-md-4 img:hover {
+		box-shadow: none;
+	}
+}
+
+.autumn {
+	background-color: $secBlack;
+	color:#fff;
+	text-align: center;
+
+	@mixin atMedium {
+		text-align: left;
+	}
+}
+
+.composition--bg {
+	background-color: $mainBlack;
+
+	.box-content {
+		padding-top:1rem;
+		padding-bottom:1rem;
+
+	}
+}
+
+.content-image {
+	background: url("../images/content.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+
+	.overlay {
+		background-color: rgba($mainBlack, 0.8);
+		border: 5px solid #fff;
+	}
+
+}

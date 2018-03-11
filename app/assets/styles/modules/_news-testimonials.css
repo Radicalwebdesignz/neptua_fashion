@@ -1,0 +1,24 @@
+.news-testimonials {
+	background-color: $mainBlack;
+
+	&--reviews {
+		background: url("../images/testimonials_bg1.jpg") no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	@mixin atLarge {
+		&--centered {
+			text-align: left;
+		}
+	}
+
+	&--padding {
+		padding-top: 3rem;
+
+		@mixin atLarge {
+			padding-top: 0px;
+		}
+	}
+
+}

@@ -1,0 +1,72 @@
+.services-banner {
+	background: url("../images/services-page.jpg") no-repeat;
+	background-size: cover;
+	height: 400px;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+.our-services {
+	margin-top: 400px;
+}
+
+.get-in-touch {
+	background-color: $mainBlue;
+}
+
+.best-services {
+	background: url("../images/best-services.jpg") no-repeat;
+	background-size: cover;
+	height: 700px;
+
+	.icon-font {
+		font-size: 1.8rem !important;
+	}
+
+	p {
+		@mixin atMedium {
+			font-size: 20px;
+		}
+	}
+
+}
+
+.works-icon {
+	background-color: $mainBlue;
+	width:60px;
+	height: 60px;
+	margin: auto;
+	margin-bottom: 2rem;
+	border-radius: 30px;
+}
+
+.works-icon .icon-pos {
+	position: relative;
+	top:15px;
+}
+
+.testimonial-slider {
+	background: url("../images/testimonials_bg1.jpg") no-repeat;
+	background-size: cover;
+	height: 600px;
+
+	img {
+		margin: 1rem auto;
+		display: block;
+	}
+
+	.slider .pb-4 {
+		letter-spacing: 4px;
+	}
+
+	.slider .py-3 {
+		font-size: 1.4rem !important;
+
+		@media only screen and (max-width:576px) {
+			font-size: 1rem !important;
+		}
+	}
+}

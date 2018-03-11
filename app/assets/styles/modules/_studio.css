@@ -1,0 +1,20 @@
+.studio {
+	background-color: $mainBlack;
+
+	&--box {
+		position: relative;
+		padding: 3rem 0px;
+
+		@mixin atMedium {
+			padding: 0px 0px;
+		}
+
+	}
+
+	&--text {
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+	}
+
+}

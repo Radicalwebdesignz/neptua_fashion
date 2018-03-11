@@ -1,0 +1,16 @@
+.talent-banner {
+	background: url("../images/talent_banner.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+.talent {
+	margin-top: 400px;
+}
+
+

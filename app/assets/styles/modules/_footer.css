@@ -1,0 +1,16 @@
+.footer {
+	background-color: $secBlack;
+	a {
+		font-size: 2rem;
+		margin:0px 10px;
+		color:#fff !important;
+	}
+	
+	i {
+		transition: all 0.5s ease-out;
+	}
+
+	i:hover {
+		transform: rotate(360deg);
+	}
+}
