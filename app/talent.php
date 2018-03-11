@@ -1,12 +1,16 @@
+<?php $currentPage = 'talent'; ?>
 <?php require("include/header.php"); ?>
 
 <!-- Talent Banner -->
-<section class="talent-banner banner-centered-text">
+<section class="talent-banner banner-centered-text" data-type="background" data-speed="5">
 	<div class="container-fluid p-0 text-white banner-section">
 		<div class="row no-gutters">
 			<div class="col-md-12 text-center">
 				<div class="">
-					<h1>The Team</h1>
+					<h2 class="display-4 ml15">
+			          	<span class="word">The</span>
+			          	<span class="word">Team</span>
+			        </h2>
 					<p>OUR TALENT</p>
 				</div>
 			</div>
@@ -19,8 +23,8 @@
 	<div class="container-fluid p-0 py-5 main-bg">
 		<div class="row no-gutters">
 			<div class="col-md-2"></div>
-			<div class="col-md-4 text-center">
-				<img src="assets/images/team11.png" class="img img-fluid">
+			<div class="col-md-4 text-center reveal-item waypoint">
+				<img data-src="assets/images/team11.png" class="img img-fluid team-image lazyload">
 			</div>
 			<div class="col-md-4 text-center text-white pt-4 px-5 banner-centered-text">
 				<div class="banner-section">
@@ -54,8 +58,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-md-4 text-center">
-				<img src="assets/images/team12.png" class="img img-fluid">
+			<div class="col-md-4 text-center reveal-item waypoint">
+				<img data-src="assets/images/team12.png" class="img img-fluid team-image lazyload">
 			</div>
 			<div class="col-md-2"></div>
 		</div>
@@ -63,8 +67,8 @@
 	<div class="container-fluid p-0 py-5 main-bg">
 		<div class="row no-gutters">
 			<div class="col-md-2"></div>
-			<div class="col-md-4 text-center">
-				<img src="assets/images/team13.png" class="img img-fluid">
+			<div class="col-md-4 text-center reveal-item waypoint">
+				<img data-src="assets/images/team13.png" class="img img-fluid team-image lazyload">
 			</div>
 			<div class="col-md-4 text-center text-white pt-4 px-5 banner-centered-text">
 				<div class="banner-section">
@@ -98,8 +102,8 @@
 					</p>
 				</div>	
 			</div>
-			<div class="col-md-4 text-center">
-				<img src="assets/images/team14.png" class="img img-fluid">
+			<div class="col-md-4 text-center reveal-item waypoint">
+				<img data-src="assets/images/team14.png" class="img img-fluid team-image lazyload">
 			</div>
 			<div class="col-md-2"></div>
 		</div>
@@ -107,8 +111,8 @@
 	<div class="container-fluid p-0 py-5 main-bg">
 		<div class="row no-gutters">
 			<div class="col-md-2"></div>
-			<div class="col-md-4 text-center">
-				<img src="assets/images/team15.png" class="img img-fluid">
+			<div class="col-md-4 text-center reveal-item waypoint">
+				<img src="assets/images/team15.png" class="img img-fluid team-image">
 			</div>
 			<div class="col-md-4 text-center text-white pt-4 px-5 banner-centered-text">
 				<div class="banner-section">
@@ -135,8 +139,8 @@
 			<div class="col-md-12">
 				<h2>We can help you in any project</h2>
 				<p>THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION</p>
-				<div>
-	        		<button class="btn btn-outline-light">Get In Touch</button>
+				<div class="anchor-button">
+	        		<a href="contact.php#contact" class="btn btn-outline-light">Get In Touch</a>
 	        	</div>
 			</div>
 		</div>

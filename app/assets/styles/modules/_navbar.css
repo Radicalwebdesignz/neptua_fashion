@@ -7,9 +7,9 @@
 	}
 
 	&--color .navbar-nav li {
-		background-color: $secBlack !important;
+		background-color: $secBlack;
 		@mixin atLarge{
-			background-color: transparent !important;
+			background-color: transparent;
 		}
 	}
 

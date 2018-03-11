@@ -1,12 +1,16 @@
+<?php $currentPage = 'studio'; ?>
 <?php require("include/header.php"); ?>
 
 <!-- Studio Banner -->
-<section class="studio-banner banner-centered-text">
+<section class="studio-banner banner-centered-text" data-type="background" data-speed="5">
 	<div class="container-fluid p-0 text-white banner-section">
 		<div class="row no-gutters">
 			<div class="col-md-12 text-center">
 				<div>
-					<h1>About Us</h1>
+					<h2 class="display-4 ml15">
+			          	<span class="word">About</span>
+			          	<span class="word">Us</span>
+			        </h2>
 					<p>OUR STUDIO</p>
 				</div>
 			</div>
@@ -21,14 +25,14 @@
 			<div class="col-md-12 text-center text-white">
 				<h3>Our Approach</h3>
 				<img src="assets/images/hr.png" class="img img-fluid py-4">
-				<p>Cras sollicitudin leo et nunc molestie lacinia. Duis vitae mi porta dui lacinia consectetur ac nec enim. Donec vel urna eu ligula maximus molestie eu sed quam. Vivamus dictum maximus leo, ut semper nibh sodales vitae. Aenean turpis nulla, interdum vitae lectus ac, suscipit pellentesque lectus. Nulla sit amet varius mauris. Sed dolor nisi, viverra quis ultricies nec, fermentum sit amet orci. Nunc at pulvinar ligula, at imperdiet justo. Mauris eu aliquet tortor. Integer imperdiet urna id nisi pretium, in ullamcorper sem aliquam. Aenean vehicula ipsum et ex sagittis porttitor.</p>
+				<p class="reveal-item waypoint">Cras sollicitudin leo et nunc molestie lacinia. Duis vitae mi porta dui lacinia consectetur ac nec enim. Donec vel urna eu ligula maximus molestie eu sed quam. Vivamus dictum maximus leo, ut semper nibh sodales vitae. Aenean turpis nulla, interdum vitae lectus ac, suscipit pellentesque lectus. Nulla sit amet varius mauris. Sed dolor nisi, viverra quis ultricies nec, fermentum sit amet orci. Nunc at pulvinar ligula, at imperdiet justo. Mauris eu aliquet tortor. Integer imperdiet urna id nisi pretium, in ullamcorper sem aliquam. Aenean vehicula ipsum et ex sagittis porttitor.</p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Quote Section -->
-<section class="quote banner-centered-text">
+<section class="quote banner-centered-text" data-type="background" data-speed="5">
 	<div class="container banner-section">
 		<div class="row">
 			<div class="col-md-12 text-center text-white">
@@ -145,7 +149,7 @@
 	<div class="container-fluid p-0">
 		<div class="row no-gutters">
 			<div class="col-md-12">
-				<img src="assets/images/neptua.jpg" class="img img-fluid">
+				<img data-src="assets/images/neptua.jpg" class="img img-fluid lazyload">
 			</div>
 		</div>
 	</div>
@@ -160,21 +164,21 @@
 				<img src="assets/images/hr.png" class="img img-fluid py-4">
 			</div>
 			<div class="col-md-6">
-				<div class="story-section pt-4">
+				<div class="story-section pt-4 reveal-item waypoint">
 					<h3 class="icon-color">The beginning</h3>
 					<p>Mauris sit amet diam quis est rutrum pulvinar eget quis eros. In justo ipsum, scelerisque non efficitur malesuada, ornare nec augue. Ut pharetra lectus quis mi facilisis, id egestas magna dapibus. Maecenas ex urna, interdum non eros eu, luctus vestibul. In gravida dolor neque.</p>
 				</div>
-				<div class="story-section pt-4">
+				<div class="story-section pt-4 reveal-item waypoint">
 					<h3 class="icon-color">Searching our style</h3>
 					<p>Ut at sapien vel sem commodo faucibus. Morbi ut lorem ligula. Vivamus sodales nunc ut aliquam aliquam. Fusce dapibus commodo ante et pulvinar. Morbi pellentesque venenatis lacus pretium vehicula. Nunc in pulvinar nisl. Nunc non enim non odio gravida luctus malesuadi.</p>
 				</div>
-				<div class="story-section pt-4">
+				<div class="story-section pt-4 reveal-item waypoint">
 					<h3 class="icon-color">New Generation</h3>
 					<p>In quis ante magna. In hac habitasse platea dictumst. Duis et leo ac ante consectetur dignissim. Sed eget purus posuere, egestas neque nec, pellentesque urna. Nam ut massa non massa mollis faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 				</div>	
 			</div>
 			<div class="col-md-6 text-center">
-				<img src="assets/images/about-story.jpg" class="img img-fluid">
+				<img data-src="assets/images/about-story.jpg" class="img img-fluid team-image lazyload">
 			</div>
 		</div>
 	</div>
@@ -185,7 +189,7 @@
 	<div class="container-fluid p-0">
 		<div class="row no-gutters">
 			<div class="col-md-12">
-				<img src="assets/images/neptua1.jpg" class="img img-fluid">
+				<img data-src="assets/images/neptua1.jpg" class="img img-fluid lazyload">
 			</div>
 		</div>
 	</div>
@@ -199,7 +203,7 @@
 				<h2>Our Fantastic Clients</h2>
 				<img src="assets/images/hr.png" class="img img-fluid py-4">
 			</div>
-			<div class="row pb-5">
+			<div class="row pb-5 reveal-item waypoint">
 				<div class="col-md-3 text-center pt-5 col-sm-6">
 					<img src="assets/images/client1.png" class="img img-fluid">
 				</div>
@@ -236,8 +240,8 @@
 			<div class="col-md-12">
 				<h2>We can help you in any project</h2>
 				<p>THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION</p>
-				<div>
-	        		<button class="btn btn-outline-light">Get In Touch</button>
+				<div class="anchor-button">
+	        		<a href="contact.php#contact" class="btn btn-outline-light">Get In Touch</a>
 	        	</div>
 			</div>
 		</div>

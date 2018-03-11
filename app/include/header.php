@@ -29,6 +29,14 @@
     <![endif]-->
 </head>
 <body>
+
+    <!-- Smooth Scroll -->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <i class="fa fa-4x fa-angle-up"></i>
+        </div>
+    </div>
+        
     <!-- Header Section -->
     <header>
         <nav class="navbar navbar-default navbar-expand-lg navbar-toggleable-lg navbar-dark navbar--color fixed-top">
@@ -39,30 +47,30 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto small">
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="index.php">HOME</a>
+                    <li class="nav-item px-3 <?php if ($currentPage == "home") {echo 'active';} ?>" >
+                        <a id="<?php if ($currentPage == "home") {echo 'nav-link';} ?>"" class="nav-link text-white" href="index.php">HOME</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="studio.php">STUDIO</a>
+                    <li class="nav-item px-3 <?php if ($currentPage == "studio") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "studio") {echo 'nav-link';} ?>" class="nav-link text-white" href="studio.php">STUDIO</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="talent.php">TALENT</a>
+                    <li class="nav-item px-3 <?php if ($currentPage == "talent") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "talent") {echo 'nav-link';} ?>" class="nav-link text-white" href="talent.php">TALENT</a>
                     </li>
-                    <li class="nav-item dropdown px-3">
-                        <a class="nav-link dropdown-toggle text-white" href="collections.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COLLECTIONS</a>
+                    <li class="nav-item dropdown px-3 <?php if ($currentPage == "collections") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "collections") {echo 'nav-link';} ?>" class="nav-link dropdown-toggle text-white" href="collections.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COLLECTIONS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="general.php">General</a>
                             <a class="dropdown-item" href="exotic.php">Exotic</a>
                         </div>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="services.php">SERVICES</a>
+                    <li class="nav-item px-3 <?php if ($currentPage == "services") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "services") {echo 'nav-link';} ?>" class="nav-link text-white" href="services.php">SERVICES</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-white" id="nav-bg" href="news.php">NEWS</a>
+                    <li class="nav-item px-3 <?php if ($currentPage == "news") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "news") {echo 'nav-link';} ?>" class="nav-link text-white" id="nav-bg" href="news.php">NEWS</a>
                     </li>
-                    <li class="nav-item px-3 pr-5">
-                        <a class="nav-link text-white" id="nav-bg" href="contact.php">CONTACT</a>
+                    <li class="nav-item px-3 pr-5 <?php if ($currentPage == "contact") {echo 'active';} ?>">
+                        <a id="<?php if ($currentPage == "contact") {echo 'nav-link';} ?>" class="nav-link text-white" id="nav-bg" href="contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>

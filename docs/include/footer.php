@@ -17,6 +17,9 @@
     <script src="assets/scripts/popper.min.js"></script>
     <script src="assets/scripts/bootstrap.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/scripts/anime.min.js"></script>
+    <script src="assets/scripts/lazysizes.min.js"></script>
+    <script src="assets/scripts/jquery.waypoints.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>

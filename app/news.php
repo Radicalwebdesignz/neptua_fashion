@@ -1,12 +1,15 @@
+<?php $currentPage = 'news'; ?>
 <?php require("include/header.php"); ?>
 
 <!-- Services Banner -->
-<section class="news-banner banner-centered-text">
+<section class="news-banner banner-centered-text" data-type="background" data-speed="5">
 	<div class="container-fluid p-0 text-white banner-section">
 		<div class="row no-gutters">
 			<div class="col-md-12 text-center">
 				<div>
-					<h1>NEWS</h1>
+					<h2 class="display-4 ml15">
+			          	<span class="word">News</span>
+			        </h2>
 					<p>OUR BLOG</p>
 				</div>
 			</div>
@@ -25,8 +28,8 @@
 			<div class="col-md-12">
 				<div class="card-columns text-white">
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_1.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_1.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Praesent sem dignisim</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -35,8 +38,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_2.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_2.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Aenean eget mattis</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -45,7 +48,7 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <div class="card-body">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Curabitur nisi ultricies</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -54,8 +57,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_3.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_3.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Nullam suscipit mas</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -64,8 +67,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_4.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_4.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Fusce quis velit in erat molestie</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -74,8 +77,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_5.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_5.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Invel tempor solli</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -84,7 +87,7 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <div class="card-body">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Vivamus eget arcu in leo</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -93,8 +96,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_6.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_6.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Maecenas et imperdiet</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -103,8 +106,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_7.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_7.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Suspendisse sed sagittis</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -113,8 +116,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_8.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_8.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Etiam quis justo sed</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>
@@ -123,8 +126,8 @@
 					    </div>
 				  	</div>
 				  	<div class="card sec-bg">
-					    <img class="card-img-top" src="assets/images/news_9.jpg" alt="Card image cap">
-					    <div class="card-body">
+					    <img class="lazyload card-img-top" data-src="assets/images/news_9.jpg" alt="Card image cap">
+					    <div class="card-body reveal-item waypoint">
 						    <h3 class="py-3 card-title">Praesent sem dignisim</h3>
 						    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem praesentium iste atque adipisci natus pariatur dicta inventore ratione sequi animi.</p>
 						    <div>

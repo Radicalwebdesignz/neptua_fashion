@@ -1,12 +1,17 @@
+<?php $currentPage = 'contact'; ?>
 <?php require("include/header.php"); ?>
 
 <!-- Contact Banner -->
-<section class="contact-banner banner-centered-text">
+<section class="contact-banner banner-centered-text" data-type="background" data-speed="5">
 	<div class="container-fluid p-0 text-white banner-section">
 		<div class="row no-gutters">
 			<div class="col-md-12 text-center">
 				<div>
-					<h1 class="display-4">Get In Touch</h1>
+					<h2 class="display-4 ml15">
+			          	<span class="word">Get</span>
+			          	<span class="word">In</span>
+			          	<span class="word">Touch</span>
+			        </h2>
 					<p>CONTACT US</p>
 				</div>
 			</div>
@@ -15,7 +20,7 @@
 </section>
 
 <!-- Contact Form Section -->
-<section class="contact-form main-bg">
+<section class="contact-form main-bg" id="contact">
 	<div class="container-fluid text-white">
 		<div class="row">
 			<div class="col-md-1"></div>
@@ -32,22 +37,23 @@
 				</div>
 			</div>
 			<div class="col-md-5 sec-bg py-5">
-				<form action="">
+				<div id="form-messages"></div>
+				<form id="ajax-contact" method="post" action="mailer.php">
 					<div class="form-group py-3">
 						<label">Your Name (required)</label>
-						<input type="text" name="name" class="form-control">
+						<input id="name" type="text" name="name" class="form-control required">
 					</div>
 					<div class="form-group py-3">
 						<label">Your Email (required)</label>
-						<input type="email" name="email" class="form-control">
+						<input id="email" type="email" name="email" class="form-control required">
 					</div>
 					<div class="form-group py-3">
-						<label">Subject</label>
-						<input type="text" name="subject" class="form-control">
+						<label">Subject (required)</label>
+						<input id="subject" type="text" name="subject" class="form-control required">
 					</div>
 					<div class="form-group py-3">
 						<label">Your Message</label>
-						<textarea type="text" name="message" class="form-control"></textarea>
+						<textarea id="message" type="text" name="message" class="form-control"></textarea>
 					</div>
 					<div class="form-group py-3">
 						<button class="btn btn-outline-light btn-block btn-lg">Get In Touch</button>
@@ -61,7 +67,7 @@
 
 <!-- Map Section -->
 <section class="map sec-bg">
-	<div class="container-fluid p-0 py-5">
+	<div class="container-fluid p-0 py-5 reveal-item waypoint">
 		<div class="row no-gutters">
 			<div class="col-md-12 text-center">
 				<div class="videoWrapper">

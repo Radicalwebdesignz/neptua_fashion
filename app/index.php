@@ -1,13 +1,14 @@
+<?php $currentPage = 'home'; ?>
 <?php require("include/header.php"); ?>
 
 <!-- Slider Section -->
-<section class="slider">
+<section id="home-slider" class="slider">
     <div class="container-fluid">
         <div class="row slider">
             <div class="slider--body">
                 <img src="assets/images/home_slider1.jpg" class="img img-fluid">
                 <div class="slider--text">
-                	<h2>Glamor & Beauty</h2>
+                	<h2 class="animate1">Glamor & Beauty</h2>
                 	<p>AUTUMN COLLECTION 2015</p>
                 	<div>
                 		<button class="btn btn-outline-light slider--button">Discover</button>
@@ -32,7 +33,7 @@
 <section class="welcome">
 	<div class="container py-5">
 		<div class="row text-center text-white">
-			<div class="col-md-12">
+			<div class="col-md-12 reveal-item waypoint">
 				<h2>Welcome to Avada Fashion</h2>
 				<div>
 					<img src="assets/images/hr.png" class="pt-2 img img-fluid">
@@ -48,7 +49,7 @@
 	<div class="container-fluid px-0">
 		<div class="row no-gutters">
 			<div class="col-md-6 text-center studio--box text-white px-5">
-				<div class="studio--text">
+				<div class="studio--text reveal-item waypoint">
 					<h3>Meet Our Studio</h3>
 					<p>THE STUDIO</p>
 					<p>Donec faucibus consequat ante. Mauris eget mi sed ex efficitur porta id non quam. Cras aliquam turpis tellus, quis laoreet lacus congue sed. Nullam at est quis urna vestibulum interdum. Praesent auctor leo ut massa ultrices tempor.</p>
@@ -58,7 +59,7 @@
             	</div>
 			</div>
 			<div class="col-md-6 text-center">
-				<img src="assets/images/studio.jpg" class="img img-fluid">
+				<img data-src="assets/images/studio.jpg" class="img img-fluid lazyload">
 			</div>
 		</div>
 	</div>
@@ -73,8 +74,8 @@
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-3 signup--content">
-				<div>
-            		<button class="btn btn-outline-light">Signup Today</button>
+				<div class="anchor-button">
+            		<a href="contact.php#contact" class="btn btn-outline-light">Signup Today</a>
             	</div>
 			</div>
 		</div>
@@ -87,10 +88,10 @@
 		<h3 class="pb-4">Talented & Professional</h3>
 		<img src="assets/images/hr.png" class="pt-2 img img-fluid">
 		<p class="py-5">Donec faucibus consequat ante. Mauris eget mi sed ex efficitur porta id non quam. Cras aliquam turpis tellus, quis laoreet lacus congue sed. Nullam at est quis urna vestibulum interdum. Praesent auctor leo ut massa ultrices tempor.</p>
-		<div class="row">
+		<div class="row reveal-item waypoint">
 			<div class="col-md-3 col-sm-6">
-				<div class="card text-center">
-					<img src="assets/images/team1.png" class="card-img-top">
+				<div class="card text-center txt-color">
+					<img data-src="assets/images/team1.png" class="card-img-top team-image lazyload">
 					<div class="card-body">
 						<div class="card-title">
 							<h5>Sandra Anderson</h5>
@@ -100,8 +101,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<div class="card text-center">
-					<img src="assets/images/team2.png" class="card-img-top">
+				<div class="card text-center txt-color">
+					<img data-src="assets/images/team2.png" class="card-img-top team-image lazyload">
 					<div class="card-body">
 						<div class="card-title">
 							<h5>James Park</h5>
@@ -111,8 +112,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<div class="card text-center">
-					<img src="assets/images/team3.png" class="card-img-top">
+				<div class="card text-center txt-color">
+					<img data-src="assets/images/team3.png" class="card-img-top team-image lazyload">
 					<div class="card-body">
 						<div class="card-title">
 							<h5>Louis Frank</h5>
@@ -122,8 +123,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<div class="card text-center">
-					<img src="assets/images/team4.png" class="card-img-top">
+				<div class="card text-center txt-color">
+					<img data-src="assets/images/team4.png" class="card-img-top team-image lazyload">
 					<div class="card-body">
 						<div class="card-title">
 							<h5>Sammy Filton</h5>
@@ -141,15 +142,15 @@
 	<div class="container-fluid p-0">
 		<div class="row no-gutters">
 			<div class="col-md-6">
-				<img src="assets/images/services.jpg" class="img img-fluid">
+				<img data-src="assets/images/services.jpg" class="img img-fluid lazyload">
 			</div>
 			<div class="col-md-6 text-center text-white services--content-body">
-				<div class="services--content px-5">
+				<div class="services--content px-5 reveal-item waypoint">
 					<h2>Quality Services</h2>
 					<p>OUR SERVICES & CORE VALUES</p>
 					<p>Donec faucibus consequat ante. Mauris eget mi sed ex efficitur porta id non quam. Cras aliquam turpis tellus, quis laoreet lacus congue sed. Nullam at est quis urna vestibulum interdum.</p>
 					<div>
-	            		<button class="btn btn-outline-light">Signup Today</button>
+	            		<button class="btn btn-outline-light">Read More</button>
 	            	</div>
 				</div>
 			</div>
@@ -164,29 +165,29 @@
 		<img src="assets/images/hr.png" class="pb-5 img img-fluid">
 		<div class="row no-gutters">
 			<div class="col-md-4">
-				<img src="assets/images/collections1.jpg" class="img img-fluid">
+				<img data-src="assets/images/collections1.jpg" class="img img-fluid coll-image lazyload">
 			</div>
 			<div class="col-md-4">
-				<img src="assets/images/collections2.jpg" class="img img-fluid collections--image1">
-				<img src="assets/images/collections3.jpg" class="img img-fluid collections--image2">
+				<img data-src="assets/images/collections2.jpg" class="img img-fluid collections--image1 coll-image lazyload">
+				<img data-src="assets/images/collections3.jpg" class="img img-fluid collections--image2 coll-image lazyload">
 			</div>
 			<div class="col-md-4">
-				<img src="assets/images/collections4.jpg" class="img img-fluid collections--image3">
-				<img src="assets/images/collections5.jpg" class="img img-fluid collections--image4">
+				<img data-src="assets/images/collections4.jpg" class="img img-fluid collections--image3 coll-image lazyload">
+				<img data-src="assets/images/collections5.jpg" class="img img-fluid collections--image4 coll-image lazyload">
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Trends Section -->
-<section class="trends">
+<section class="trends1">
 	<div class="container py-5">
 		<div class="row">
 			<div class="col-md-12 text-center text-white">
 				<h3>We create trends for the World</h3>
 				<img src="assets/images/hr.png" class="py-4 img img-fluid">
 				<p>Donec faucibus consequat ante. Mauris eget mi sed ex efficitur porta id non quam. Cras aliquam turpis tellus, quis laoreet lacus congue sed. Nullam at est quis urna vestibulum interdum. Praesent auctor leo ut massa ultrices tempor.</p>
-				<img src="assets/images/trends.jpg" class="img img-fluid">
+				<img data-src="assets/images/trends.jpg" class="img img-fluid trends1-image lazyload">
 			</div>
 		</div>
 	</div>
@@ -201,7 +202,7 @@
 				<p>LATEST STORIES FROM THE BLOG</p>
 				<div class="row py-5 px-5">
 					<div class="col-lg-3 col-md-12">
-						<img src="assets/images/news1.jpg" class="img img-fluid">
+						<img data-src="assets/images/news1.jpg" class="img img-fluid lazyload">
 					</div>
 					<div class="col-lg-9 col-md-12 news-testimonials--centered news-testimonials--padding">
 						<h4>Praesent sem dignisim</h4>
@@ -211,7 +212,7 @@
 		            	</div>
 					</div>
 					<div class="col-lg-3 col-md-12 pt-5">
-						<img src="assets/images/news2.jpg" class="img img-fluid">
+						<img data-src="assets/images/news2.jpg" class="img img-fluid lazyload">
 					</div>
 					<div class="col-lg-9 col-md-12 pt-5 news-testimonials--centered">
 						<h4>Lorem ipsum dolor</h4>
@@ -249,8 +250,8 @@
 			<div class="col-md-12">
 				<h2>We can help you in any project</h2>
 				<p>THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION</p>
-				<div>
-	        		<button class="btn btn-outline-light">Get In Touch</button>
+				<div class="anchor-button">
+	        		<a href="contact.php#contact" class="btn btn-outline-light">Get In Touch</a>
 	        	</div>
 			</div>
 		</div>

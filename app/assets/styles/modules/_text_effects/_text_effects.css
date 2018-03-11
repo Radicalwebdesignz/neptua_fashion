@@ -1,0 +1,76 @@
+#home-slider .animate1 {
+	animation: grow 800ms cubic-bezier(.61,-1.14,.25,1.83);
+}
+
+@keyframes grow {
+	0% {
+		margin-top: 50px;
+		text-shadow: 2px 2px 4px black;
+	}
+	100% {
+		margin-top: 0px;
+		text-shadow: none;
+	}
+}
+
+.team {
+
+	&-image {
+		animation: rotateOut 0.5s ease-in forwards;
+	}
+
+	&-image:hover {
+		animation: rotateIn 0.5s ease-in forwards;
+		
+	}
+
+}
+
+@keyframes rotateIn {
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(180deg);}
+}
+
+@keyframes rotateOut {
+	0% {transform: rotateY(180deg);}
+	100% {transform: rotateY(0deg);}
+}
+
+.collections {
+
+	.coll-image {
+		transition: all 1s cubic-bezier(.71,.23,.25,1.83);
+	}
+
+	.coll-image:hover {
+		opacity:0.4;
+	}
+}
+
+.trends1-image {
+	animation: rotateOut 0.5s ease-in forwards;
+}
+
+.trends1-image:hover {
+	animation: rotateIn 0.5s ease-in forwards;
+}
+
+.display-4 {
+	
+}
+
+.ml15 .word {
+  	display: inline-block;
+  	line-height: 1em;
+}
+
+.services-image:hover {
+	animation:opacity 2s cubic-bezier(1,.25,0,1.02);
+}
+
+@keyframes opacity {
+	0% {opacity: 0}
+	100% {opacity: 1;}
+}
+
+

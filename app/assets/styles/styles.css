@@ -7155,6 +7155,47 @@ body {
 	-webkit-transform: translateY(-50%);
 	        transform: translateY(-50%);
 }
+.active {
+	background-color: #fff !important;
+}
+#nav-link {
+	color:black !important;
+}
+.reveal-item {
+	opacity: 0;
+	transition:all 1.5s ease-out;
+	-webkit-transform: scale(0.5);
+	        transform: scale(0.5);
+}
+.reveal-item--is-visible {
+		opacity: 1;
+		-webkit-transform:scale(1);
+		        transform:scale(1);
+	}
+.anchor-button a {
+	color:#fff;
+}
+.anchor-button a:hover {
+	color:black;
+}
+.success {
+  	padding: 1em;
+  	margin-bottom: 0.75rem;
+  	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  	color: #468847;
+  	background-color: #dff0d8;
+  	border: 1px solid #d6e9c6;
+   border-radius: 4px;
+}
+.error {
+  	padding: 1em;
+  	margin-bottom: 0.75rem;
+  	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  	color: #b94a48;
+  	background-color: #f2dede;
+  	border: 1px solid rgba(185, 74, 72, 0.3);
+   border-radius: 4px;
+}
 .slider--body {
 		position: relative;
 	}
@@ -7226,11 +7267,11 @@ body {
 	}
 	}
 .navbar--color .navbar-nav li {
-		background-color: #141416 !important;
+		background-color: #141416;
 	}
 @media (min-width:992px) {
 .navbar--color .navbar-nav li {
-			background-color: transparent !important
+			background-color: transparent
 	}
 	}
 .navbar--nav-color {
@@ -7330,7 +7371,7 @@ body {
 		border-left: solid 8.68px transparent;
 	}
 	}
-.trends {
+.trends1 {
 	background-color: #141416;
 }
 .news-testimonials {
@@ -7815,4 +7856,130 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+#home-slider .animate1 {
+	-webkit-animation: grow 800ms cubic-bezier(.61,-1.14,.25,1.83);
+	        animation: grow 800ms cubic-bezier(.61,-1.14,.25,1.83);
+}
+@-webkit-keyframes grow {
+	0% {
+		margin-top: 50px;
+		text-shadow: 2px 2px 4px black;
+	}
+	100% {
+		margin-top: 0px;
+		text-shadow: none;
+	}
+}
+@keyframes grow {
+	0% {
+		margin-top: 50px;
+		text-shadow: 2px 2px 4px black;
+	}
+	100% {
+		margin-top: 0px;
+		text-shadow: none;
+	}
+}
+.team-image {
+		-webkit-animation: rotateOut 0.5s ease-in forwards;
+		        animation: rotateOut 0.5s ease-in forwards;
+	}
+.team-image:hover {
+		-webkit-animation: rotateIn 0.5s ease-in forwards;
+		        animation: rotateIn 0.5s ease-in forwards;
+		
+	}
+@-webkit-keyframes rotateIn {
+	0% {-webkit-transform: rotateY(0deg);transform: rotateY(0deg);}
+	100% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+}
+@keyframes rotateIn {
+	0% {-webkit-transform: rotateY(0deg);transform: rotateY(0deg);}
+	100% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+}
+@-webkit-keyframes rotateOut {
+	0% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+	100% {-webkit-transform: rotateY(0deg);transform: rotateY(0deg);}
+}
+@keyframes rotateOut {
+	0% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+	100% {-webkit-transform: rotateY(0deg);transform: rotateY(0deg);}
+}
+.collections .coll-image {
+		transition: all 1s cubic-bezier(.71,.23,.25,1.83);
+	}
+.collections .coll-image:hover {
+		opacity:0.4;
+	}
+.trends1-image {
+	-webkit-animation: rotateOut 0.5s ease-in forwards;
+	        animation: rotateOut 0.5s ease-in forwards;
+}
+.trends1-image:hover {
+	-webkit-animation: rotateIn 0.5s ease-in forwards;
+	        animation: rotateIn 0.5s ease-in forwards;
+}
+.display-4 {
+	
+}
+.ml15 .word {
+  	display: inline-block;
+  	line-height: 1em;
+}
+.services-image:hover {
+	-webkit-animation:opacity 2s cubic-bezier(1,.25,0,1.02);
+	        animation:opacity 2s cubic-bezier(1,.25,0,1.02);
+}
+@-webkit-keyframes opacity {
+	0% {opacity: 0}
+	100% {opacity: 1;}
+}
+@keyframes opacity {
+	0% {opacity: 0}
+	100% {opacity: 1;}
+}
+.scrolltop {
+    display:none;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    z-index:2;
+      /*Added Z-index so that it till be visible in all layers- adjust if needed*/
+}
+.scroll {
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:#b2b2b2;
+    background:rgba(178,178,178,0.7);
+    padding:20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor:pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;        
+}
+.scroll:hover {
+    background:rgba(178,178,178,1.0);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;        
+}
+.scroll:hover .fa {
+    padding-top:-10px;
+}
+.scroll .fa {
+    font-size:30px;
+    margin-top:-5px;
+    margin-left:1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;    
 }
